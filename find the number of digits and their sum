@@ -1,0 +1,8 @@
+line = input()
+digit_count = 0
+digit_sum = 0
+for element in line:
+    if element.isdigit():
+        digit_count += 1
+        digit_sum += int(element)
+print(f'{digit_count} {digit_sum}')
