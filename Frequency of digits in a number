@@ -1,0 +1,9 @@
+numbers_str = input() # принимаем число от пользователя
+result = [0] * 10 # создаем список возможных цифр
+
+for char in numbers_str:
+    result[int(char)] += 1 # проходим по списку и увеличиваем значение на 1
+
+for char in range(10):
+    if result[char] > 0:
+        print(char, result[char]) # проходим по списку значений, выводим индекс и колличество. 
